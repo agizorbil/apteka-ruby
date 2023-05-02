@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+<<<<<<< HEAD
+  date: 2023-02-23
+  status: MyString
+
+two:
+  date: 2023-02-23
+=======
+  customer: one
+  date: 2023-05-02
+  status: MyString
+
+two:
+  customer: two
+  date: 2023-05-02
+>>>>>>> 1e11775 (First Commit)
+  status: MyString

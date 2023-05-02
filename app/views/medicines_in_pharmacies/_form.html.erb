@@ -1,0 +1,32 @@
+<%= form_with(model: medicines_in_pharmacy) do |form| %>
+  <% if medicines_in_pharmacy.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(medicines_in_pharmacy.errors.count, "error") %> prohibited this medicines_in_pharmacy from being saved:</h2>
+
+      <ul>
+        <% medicines_in_pharmacy.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :pharmacy_id, style: "display: block" %>
+    <%= form.collection_select :pharmacy_id, Pharmacy.all, :id, :name, prompt: true %>
+  </div>
+
+  <div>
+    <%= form.label :medicine_id, style: "display: block" %>
+    <%= form.collection_select :medicine_id, Medicine.all, :id, :name, prompt: true %>
+  </div>
+
+  <div>
+    <%= form.label :count, style: "display: block" %>
+    <%= form.number_field :count %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,22 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+<<<<<<< HEAD
+  name: MyString
+  address: MyString
+  phone: 1
+
+two:
+  name: MyString
+  address: MyString
+  phone: 1
+=======
+  name: MyText
+  address: MyText
+  phone: MyString
+
+two:
+  name: MyText
+  address: MyText
+  phone: MyString
+>>>>>>> 1e11775 (First Commit)

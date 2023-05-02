@@ -1,0 +1,22 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+<<<<<<< HEAD
+  phone: MyString
+  email: MyText
+
+two:
+  phone: MyString
+  email: MyText
+=======
+  name: MyString
+  second_name: MyString
+  email: MyText
+  phone: 1
+
+two:
+  name: MyString
+  second_name: MyString
+  email: MyText
+  phone: 1
+>>>>>>> 1e11775 (First Commit)
